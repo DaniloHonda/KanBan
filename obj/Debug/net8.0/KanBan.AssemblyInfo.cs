@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KanBan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84a1fb47475834e6f9b016a48b8c9f5922da45d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("KanBan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KanBan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
