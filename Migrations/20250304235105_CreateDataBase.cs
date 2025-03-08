@@ -64,7 +64,6 @@ namespace KanBan.Migrations
                 column: "StatusId");
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

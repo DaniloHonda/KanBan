@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IhMWHGAdMgwrfvfuNQKwaEWrSU18sDqXo7LKKqqwoIc=",
+  "Hash": "EUmol2d/LbpJAkmp5OKxEu9m+o5+krL9zglcOUApn1M=",
   "Source": "KanBan",
   "BasePath": "_content/KanBan",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Danilo\\Desktop\\Programacao\\KanBan\\KanBan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KanBan.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Danilo\\Desktop\\Programacao\\KanBan\\KanBan\\wwwroot\\css\\Cerulean.css",
+      "SourceId": "KanBan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Danilo\\Desktop\\Programacao\\KanBan\\KanBan\\wwwroot\\",
+      "BasePath": "_content/KanBan",
+      "RelativePath": "css/Cerulean#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nhul5zmmfv",
+      "Integrity": "ZQF8TvODrNaxnBrKoGrMWKP6ACZ3l3WiimTU6xro7r4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Cerulean.css"
     },
     {
       "Identity": "C:\\Users\\Danilo\\Desktop\\Programacao\\KanBan\\KanBan\\wwwroot\\css\\site.css",
@@ -1321,6 +1342,88 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/Cerulean.css",
+      "AssetFile": "C:\\Users\\Danilo\\Desktop\\Programacao\\KanBan\\KanBan\\wwwroot\\css\\Cerulean.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "286286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZQF8TvODrNaxnBrKoGrMWKP6ACZ3l3WiimTU6xro7r4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 22:01:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZQF8TvODrNaxnBrKoGrMWKP6ACZ3l3WiimTU6xro7r4="
+        }
+      ]
+    },
+    {
+      "Route": "css/Cerulean.nhul5zmmfv.css",
+      "AssetFile": "C:\\Users\\Danilo\\Desktop\\Programacao\\KanBan\\KanBan\\wwwroot\\css\\Cerulean.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "286286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZQF8TvODrNaxnBrKoGrMWKP6ACZ3l3WiimTU6xro7r4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 22:01:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nhul5zmmfv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Cerulean.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZQF8TvODrNaxnBrKoGrMWKP6ACZ3l3WiimTU6xro7r4="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "C:\\Users\\Danilo\\Desktop\\Programacao\\KanBan\\KanBan\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1589,7 +1692,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 23:51:03 GMT"
+          "Value": "Sat, 08 Mar 2025 19:48:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1626,7 +1729,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 23:51:03 GMT"
+          "Value": "Sat, 08 Mar 2025 19:48:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1671,7 +1774,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 23:51:03 GMT"
+          "Value": "Sat, 08 Mar 2025 19:48:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1716,7 +1819,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 23:51:03 GMT"
+          "Value": "Sat, 08 Mar 2025 19:48:10 GMT"
         },
         {
           "Name": "Cache-Control",

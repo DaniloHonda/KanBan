@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 23:51:03 GMT"
+          "Value": "Sat, 08 Mar 2025 19:48:10 GMT"
         }
       ],
       "EndpointProperties": [
@@ -74,13 +74,95 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 23:51:03 GMT"
+          "Value": "Sat, 08 Mar 2025 19:48:10 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
           "Value": "sha256-qk2Xk5To3LUC637KSJ602fSHMruC3uq9XzdOAVVJZA8="
+        }
+      ]
+    },
+    {
+      "Route": "css/Cerulean.css",
+      "AssetFile": "css/Cerulean.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "286286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZQF8TvODrNaxnBrKoGrMWKP6ACZ3l3WiimTU6xro7r4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 22:01:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZQF8TvODrNaxnBrKoGrMWKP6ACZ3l3WiimTU6xro7r4="
+        }
+      ]
+    },
+    {
+      "Route": "css/Cerulean.nhul5zmmfv.css",
+      "AssetFile": "css/Cerulean.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "286286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZQF8TvODrNaxnBrKoGrMWKP6ACZ3l3WiimTU6xro7r4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 22:01:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nhul5zmmfv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZQF8TvODrNaxnBrKoGrMWKP6ACZ3l3WiimTU6xro7r4="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Cerulean.css"
         }
       ]
     },

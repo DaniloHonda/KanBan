@@ -22,7 +22,8 @@ namespace KanBan.Services.Atividade
                     Matricula = random.Next(1000, 9999),
                     Titulo = atividadeNova.Titulo,
                     Descricao = atividadeNova.Descricao,
-                    StatusId = 1
+                    StatusId = atividadeNova.StatusId,
+                    DataCriacao = atividadeNova.DataCriacao
                 };
                 _context.Atividade.Add(atividade);
                 await _context.SaveChangesAsync();
