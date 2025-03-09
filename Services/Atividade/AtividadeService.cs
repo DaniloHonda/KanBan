@@ -35,6 +35,42 @@ namespace KanBan.Services.Atividade
             }
         }
 
+        public async Task<AtividadeModel> MudarCard(int atividadeId)
+        {
+            try
+            {
+                var atividade = await _context.Atividade.FindAsync(atividadeId);
+
+                if (atividade.StatusId < 4 && atividade.StatusId > 0 && atividade != null)
+                {
+                    atividade.StatusId++;
+                }
+
+                _context.Update(atividade);
+                await _context.SaveChangesAsync();
+                return atividade;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        public async Task<AtividadeModel> DeletarCard(int atividadeId)
+        {
+            try
+            {
+                var atividade = await _context.Atividade.FindAsync(atividadeId);
+                _context.Remove(atividade);
+                await _context.SaveChangesAsync();
+                return atividade;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
         public async Task<List<AtividadeModel>> GetAtividades()
         {
             try
@@ -61,5 +97,27 @@ namespace KanBan.Services.Atividade
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<AtividadeModel> VoltarCard(int atividadeId)
+        {
+            try
+            {
+                var atividade = await _context.Atividade.FindAsync(atividadeId);
+
+                if (atividade.StatusId > 1)
+                {
+                    atividade.StatusId--;
+                }
+
+                _context.Update(atividade);
+                await _context.SaveChangesAsync();
+                return atividade;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
     }
 }

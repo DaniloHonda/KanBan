@@ -38,5 +38,23 @@ namespace KanBan.Controllers
                 return View(novaAtividade);
             }
         }
+
+        public async Task<IActionResult> MudarCard(int atividadeId)
+        {
+            var atividade = await _atividadeInterface.MudarCard(atividadeId);
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> DeletarCard(int atividadeId)
+        {
+            var atividade = await _atividadeInterface.DeletarCard(atividadeId);
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> VoltarCard(int atividadeId)
+        {
+            await _atividadeInterface.VoltarCard(atividadeId);
+            return RedirectToAction("Index");
+        }
     }
 }

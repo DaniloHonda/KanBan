@@ -1,5 +1,17 @@
 ﻿@model List<AtividadeModel>
 
+@functions {
+    public string ObterClasseProximoBotao(string statusAtual)
+    {
+        return statusAtual switch
+        {
+            "Pendente" => "btn-primary",     // Próximo: Em andamento
+            "Em andamento" => "btn-warning", // Próximo: Concluído
+            "Concluido" => "btn-sucess"             // Caso não aplicável
+        };
+    }
+}
+
 <div class="container">
     <div class="row">
         <!-- Coluna para Pendentes -->
@@ -9,14 +21,17 @@
             {
                 foreach (var atividade in Model.Where(x => x.Status.Nome == "Pendente"))
                 {
-                    <div class="card text-center">
-                        <div class="card-header bg-primary">
+                    <div class="card text-center my-3">
+                        <div class="card-header bg-primary text-white">
                             @atividade.Status.Nome
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">@atividade.Titulo</h5>
                             <p class="card-text">@atividade.Descricao</p>
-                            <a class="btn btn-primary w-50 mx-2">Próximo card</a>
+                            <a class="btn @ObterClasseProximoBotao(atividade.Status.Nome) w-50 mx-2"
+                               asp-action="MudarCard"
+                               asp-controller="Atividade"
+                               asp-route-atividadeId="@atividade.Id">Próximo card</a>
                         </div>
                         <div class="card-footer text-body-secondary">
                             @atividade.DataCriacao.ToString("dd/MM/yyyy")
@@ -27,21 +42,27 @@
         </div>
 
         <!-- Coluna para Em andamento -->
-        <div class="col-4"> 
+        <div class="col-4">
             <h1 class="text-warning">Em Andamento</h1>
             @if (Model.Count() > 0)
             {
                 foreach (var atividade in Model.Where(x => x.Status.Nome == "Em andamento"))
                 {
-                    <div class="card text-center">
-                        <div class="card-header bg-warning">
+                    <div class="card text-center my-3">
+                        <div class="card-header bg-warning text-white">
                             @atividade.Status.Nome
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">@atividade.Titulo</h5>
                             <p class="card-text">@atividade.Descricao</p>
-                            <a class="btn btn-primary w-50 mx-2">Próximo card</a>
-                            <a class="btn btn-primary w-50 mx-2">Voltar</a>
+                            <a class="btn @ObterClasseProximoBotao(atividade.Status.Nome) w-50 mx-2"
+                               asp-action="MudarCard"
+                               asp-controller="Atividade"
+                               asp-route-atividadeId="@atividade.Id">Próximo card</a>
+                            <a class="btn btn-secondary w-50 mx-2"
+                               asp-action="VoltarCard"
+                               asp-controller="Atividade"
+                               asp-route-atividadeId="@atividade.Id">Voltar</a>
                         </div>
                         <div class="card-footer text-body-secondary">
                             @atividade.DataCriacao.ToString("dd/MM/yyyy")
@@ -58,15 +79,21 @@
             {
                 foreach (var atividade in Model.Where(x => x.Status.Nome == "Concluído"))
                 {
-                    <div class="card text-center">
-                        <div class="card-header bg-success">
+                    <div class="card text-center my-3">
+                        <div class="card-header bg-success text-white">
                             @atividade.Status.Nome
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">@atividade.Titulo</h5>
                             <p class="card-text">@atividade.Descricao</p>
-                            <a class="btn btn-primary w-50 mx-2">Deletar card</a>
-                            <a class="btn btn-primary w-50 mx-2">Voltar</a>
+                            <a class="btn btn-danger w-50 mx-2"
+                               asp-action="DeletarCard"
+                               asp-controller="Atividade"
+                               asp-route-atividadeId="@atividade.Id">Deletar card</a>
+                            <a class="btn btn-secondary w-50 mx-2"
+                               asp-action="VoltarCard"
+                               asp-controller="Atividade"
+                               asp-route-atividadeId="@atividade.Id">Voltar</a>
                         </div>
                         <div class="card-footer text-body-secondary">
                             @atividade.DataCriacao.ToString("dd/MM/yyyy")
