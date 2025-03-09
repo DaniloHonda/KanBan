@@ -42,9 +42,3 @@ O sistema estará acessível em: [http://localhost:5000](http://localhost:5000)
 3. Arraste e solte as tarefas entre as colunas para organizar seu fluxo de trabalho.
 4. Exclua tarefas quando necessário.
 
-## 🤝 Contribuição
-Sinta-se à vontade para contribuir! Abra uma issue ou envie um pull request.
-
-## 📜 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
-
